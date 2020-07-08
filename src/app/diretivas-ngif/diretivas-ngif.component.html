@@ -28,3 +28,13 @@
 <div [hidden]="mostrarCursos">
   Não existem cursos para serem listados
 </div>
+
+<h5>Removendo * e usando template</h5>
+
+<ng-template [ngIf]="mostrarCursos">
+  <div>Lista de cursos aqui.</div>
+</ng-template>
+
+<div template="ngif mostrarCursos">
+  Lista de cursos aqui.
+</div>
